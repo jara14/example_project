@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<script src="assignment.js"></script>
+</head>
+<body>
+<div>
+<h3>Calculate your Age</h3>
+
+<input type="number" id="myNumber" value="0">
+
+<p>Click the button to get the Age</p>
+
+<button  onclick="calculateAge(document.getElementById('myNumber').value)"> Calculate_age</button>
+
+<p id="demo"></p>
+</div>
+<br/>
+<div> 
+<h3>LIFETIME SUPPLY CALCULATOR</h3>
+
+Age : <input type="number" id="age" value="0"> <br/>
+
+Amount Per Day : <input type="number" id="perDay" value="0"> <br/>
+
+<p>Click the button to get life time supply</p>
+
+<button  onclick="calculateSupply(document.getElementById('age').value,document.getElementById('perDay').value)"> Calculate_age</button>
+
+<p id="lts"></p>	
+</div>
+<br/>
+<div>
+<h3>THE GEOMETRIZER</h3>
+
+Radius : <input type="number" id="radius" value="0"> <br/>
+
+<p>Click the button to get life time supply</p>
+
+<button  onclick="calculateArea(document.getElementById('radius').value)"> Calculate_Area</button>
+<button  onclick="calculateCircumference(document.getElementById('radius').value)"> Calculate_Circumference</button>
+
+<p id="area"></p>
+<p id="circum"></p>
+</div>
+<br/>
+<div>
+<h3>THE TEMPERATURE CONVERTER</h3>
+
+Value : <input type="number" id="value" value="0"> <br/>
+
+<p>Click the button to get life time supply</p>
+
+<button  onclick="celsiusToFahrenheit(document.getElementById('value').value)"> celsiusToFahrenheit</button>
+<button  onclick="fahrenheitToCelsius(document.getElementById('value').value)">fahrenheitToCelsius</button>
+
+<p id="result"></p>
+</div>
+</body>
+</html>
