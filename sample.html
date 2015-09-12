@@ -14,42 +14,42 @@
 	<body>
 		<div class= "container-fluid">
 		<div class= "row">
-			<div class= "col-md-5" style="margin-top: 50px">
+			<div class= "col-md-5" style="margin-top: 50px;">
 				<h3>Calculate your Age</h3>
-				Enter your birth year: <input type="number" id="myNumber" class="form-control" placeholder="Enter your birth year"><br/>
-				<p>Click the button to get the Age</p>
+				<p class="text-primary">Enter your birth year:</p> <input type="number" id="myNumber" class="form-control" placeholder="Enter your birth year"><br/>
+				<p class="text-primary">Click the button to get the Age</p>
 				<button  type="button" class="btn btn-primary" onclick="calculateAge(document.getElementById('myNumber').value)"> Calculate_age</button>
-				<p id="demo"></p>
+				<p class="text-success" id="demo"></p>
 
 			</div>
 			<br/>
 			<div class= "col-md-6">
 				<h3>LIFETIME SUPPLY CALCULATOR</h3>
-				Age : <input type="number" id="age" class="form-control" placeholder="Enter your age"> <br/>
-				Amount Per Day : <input type="number" class="form-control" placeholder="Enter amount per day" id="perDay"> <br/>
-				<p>Click the button to get life time supply</p>
+				<p class="text-primary">Age :</p> <input type="number" id="age" class="form-control" placeholder="Enter your age"> <br/>
+				<p class="text-primary">Amount Per Day : </p> 
+				<input type="number" class="form-control" placeholder="Enter amount per day" id="perDay"> <br/>
+				<p class="text-primary">Click the button to get life time supply</p>
 				<button type="button" class="btn btn-primary" onclick="calculateSupply(document.getElementById('age').value,document.getElementById('perDay').value)"> lifetime suply</button>
-
-				<p id="lts"></p>	
+				<p class="text-success" id="lts"></p>	
 			</div>
 			<br/>
 			<div class= "col-md-5">
 				<h3>THE GEOMETRIZER</h3>
-				Radius : <input type="number" id="radius" class="form-control" placeholder="Enter Radius"> <br/>
-				<p>Click the button to get life time supply</p>
+				<p class="text-primary">Radius :</p> <input type="number" id="radius" class="form-control" placeholder="Enter Radius"> <br/>
+				<p class="text-primary">Click the button to get life time supply</p>
 				<button type="button" class="btn btn-primary" onclick="calculateArea(document.getElementById('radius').value)"> Calculate_Area</button>
 				<button type="button" class="btn btn-primary" onclick="calculateCircumference(document.getElementById('radius').value)"> Calculate_Circumference</button>
-				<p id="area"></p>
-				<p id="circum"></p>
+				<p class="text-success" id="area"></p>
+				<p class="text-success" id="circum"></p>
 			</div>
 			<br/>
 			<div class= "col-md-6">
 				<h3>THE TEMPERATURE CONVERTER</h3>
-				Value : <input type="number" id="value" class="form-control" placeholder="Enter temperature you want t convert"> <br/>
-				<p>Click the button to get life time supply</p>
+				<p class="text-primary">Value :</p> <input type="number" id="value" class="form-control" placeholder="Enter temperature you want t convert"> <br/>
+				<p class="text-primary">Click the button to get life time supply</p>
 				<button type="button" class="btn btn-primary" onclick="celsiusToFahrenheit(document.getElementById('value').value)"> celsiusToFahrenheit</button>
 				<button type="button" class="btn btn-primary" onclick="fahrenheitToCelsius(document.getElementById('value').value)">fahrenheitToCelsius</button>
-				<p id="result"></p>
+				<p class="text-success" id="result"></p>
 			</div>
 		</div>	
 		</div>	
