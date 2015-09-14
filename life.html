@@ -1,12 +1,14 @@
 <html>
 	<head>
+		<!-- Using bootstrap CDN -->
+		<!--Bootstrap is used to get responsive website-->
+		<script src="assignment.js"></script>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-		<!--jquery-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		 <style>
@@ -16,8 +18,8 @@
 				  margin: auto;
 			  }
 		</style>
-	<head>	
-		<body>
+	</head>
+	<body>
 				<nav class="navbar navbar-inverse navbar-static-top">
 				  <div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -31,12 +33,12 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navHeaderCollapse">
 					  <ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="sample.html">Homepage</a></li>
+						<li><a href="sample.html">Homepage</a></li>
 						<li class="dropdown">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assigned Functionalities <b class="caret"></b></a>
 						  <ul class="dropdown-menu">
 							<li><a href="age.html">Age Calculator</a></li>
-							<li><a href="life.html">LIFETIME SUPPLY CALCULATOR</a></li>
+							<li class="active"><a href="life.html">LIFETIME SUPPLY CALCULATOR</a></li>
 							<li><a href="geometrizer.html">THE GEOMETRIZER</a></li>
 							<li><a href="temp.html">THE TEMPERATURE CONVERTER</a></li>
 						  </ul>
@@ -58,11 +60,11 @@
 
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
-						  <div class="item active">
+						  <div class="item">
 							<a href="age.html"><img src="images\age.jpg" alt="age" width="460" height="345"></a>
 						  </div>
 
-						  <div class="item">
+						  <div class="item active">
 							<a href="life.html"><img src="images\life.jpg" alt="Chania" width="460" height="345"></a>
 						  </div>
 						
@@ -86,5 +88,14 @@
 						</a>
 					 </div><!--carousel slide-->
 				</div><!--container-->
+				<div class= "col-md-6">
+					<h3>LIFETIME SUPPLY CALCULATOR</h3>
+					<p class="text-primary">Age :</p> <input type="number" id="age" class="form-control" placeholder="Enter your age"> <br/>
+					<p class="text-primary">Amount Per Day : </p> 
+					<input type="number" class="form-control" placeholder="Enter amount per day" id="perDay"> <br/>
+					<p class="text-primary">Click the button to get life time supply</p>
+					<button type="button" class="btn btn-primary" onclick="calculateSupply(document.getElementById('age').value,document.getElementById('perDay').value)"> lifetime suply</button>
+					<p class="text-success" id="lts"></p>	
+				</div>
 		</body>
 </html>

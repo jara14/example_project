@@ -1,12 +1,14 @@
 <html>
 	<head>
+		<!-- Using bootstrap CDN -->
+		<!--Bootstrap is used to get responsive website-->
+		<script src="assignment.js"></script>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-		<!--jquery-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		 <style>
@@ -16,7 +18,7 @@
 				  margin: auto;
 			  }
 		</style>
-	<head>	
+	</head>
 		<body>
 				<nav class="navbar navbar-inverse navbar-static-top">
 				  <div class="container">
@@ -31,11 +33,11 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navHeaderCollapse">
 					  <ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="sample.html">Homepage</a></li>
+						<li><a href="sample.html">Homepage</a></li>
 						<li class="dropdown">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assigned Functionalities <b class="caret"></b></a>
 						  <ul class="dropdown-menu">
-							<li><a href="age.html">Age Calculator</a></li>
+							<li class="active"><a href="age.html">Age Calculator</a></li>
 							<li><a href="life.html">LIFETIME SUPPLY CALCULATOR</a></li>
 							<li><a href="geometrizer.html">THE GEOMETRIZER</a></li>
 							<li><a href="temp.html">THE TEMPERATURE CONVERTER</a></li>
@@ -86,5 +88,16 @@
 						</a>
 					 </div><!--carousel slide-->
 				</div><!--container-->
+				<div class="container-fluid">
+					<div class="row">
+						<div class= "col-md-5" style="margin-top: 50px; backgroundcolor: lightgrey">
+							<h3>Calculate your Age</h3>
+							<p class="text-primary">Enter your birth year:</p> <input type="number" id="myNumber" class="form-control" placeholder="Enter your birth year"><br/>
+							<p class="text-primary">Click the button to get the Age</p>
+							<button  type="button" class="btn btn-primary" onclick="calculateAge(document.getElementById('myNumber').value)"> Calculate_age</button>
+							<p class="text-success" id="demo"></p>
+						</div>
+					</div>
+				</div>
 		</body>
 </html>
