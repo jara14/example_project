@@ -3,6 +3,8 @@
 		<!-- Using bootstrap CDN -->
 		<!--Bootstrap is used to get responsive website-->
 		<script src="assignment.js"></script>
+		<!--jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -11,16 +13,10 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		 <style>
-			  .carousel-inner > .item > img,
-			  .carousel-inner > .item > a > img {
-				  width: 70%;
-				  margin: auto;
-			  }
-		</style>
+
 	</head>
 	<body>
-				<nav class="navbar navbar-inverse navbar-static-top">
+				<nav class="navbar navbar-default navbar-static-top">
 				  <div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					  <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -47,48 +43,9 @@
 					</div><!-- /.navbar-collapse -->
 				  </div><!-- /.container-fluid -->
 				</nav>
-				<div class="container">
+			<div class="container">
 					 <br>
-					 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-						  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						  <li data-target="#myCarousel" data-slide-to="1"></li>
-						  <li data-target="#myCarousel" data-slide-to="2"></li>
-						  <li data-target="#myCarousel" data-slide-to="3"></li>
-						</ol>
-
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox">
-						  <div class="item">
-							<a href="age.html"><img src="images\age.jpg" alt="age" width="460" height="345"></a>
-						  </div>
-
-						  <div class="item active">
-							<a href="life.html"><img src="images\life.jpg" alt="Chania" width="460" height="345"></a>
-						  </div>
-						
-						  <div class="item">
-							<a href="geometrizer.html"><img src="images\area.jpg" alt="Geometry" width="460" height="345"></a>
-						  </div>
-
-						  <div class="item">
-							<a href="temp.html"><img src="images\temp.jpg" alt="temperature" width="460" height="345"></a>
-						  </div>
-						</div> <!--carousel inner-->
-
-						<!-- Left and right controls -->
-						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						  <span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						  <span class="sr-only">Next</span>
-						</a>
-					 </div><!--carousel slide-->
-				</div><!--container-->
-				<div class= "col-md-5" style= "margin-left: 200px;background-color: lightgray;">
+				<div class= "col-md-5" style= "margin-left: 200px;">
 					<h3>LIFETIME SUPPLY CALCULATOR</h3>
 					<p class="text-primary">Age :</p> <input type="number" id="age" class="form-control" placeholder="Enter your age"> <br/>
 					<p class="text-primary">Amount Per Day : </p> 
@@ -97,5 +54,6 @@
 					<button type="button" class="btn btn-primary" onclick="calculateSupply(document.getElementById('age').value,document.getElementById('perDay').value)"> lifetime suply</button>
 					<p class="text-success" id="lts"></p>	
 				</div>
+			</div>
 		</body>
 </html>
